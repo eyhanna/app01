@@ -1,0 +1,8 @@
+<FilesMatch "\.(php|tpl|txt)$">
+          AuthUserFile  /etc/httpd/conf.d/.htpasswd
+          AuthName "Private access"
+
+          AuthType Basic
+
+          require valid-user
+</FilesMatch>

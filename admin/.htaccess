@@ -1,0 +1,8 @@
+<Files *.*>
+          AuthUserFile  /etc/httpd/conf.d/.htpasswd
+          AuthName "Private access"
+
+          AuthType Basic
+
+          require valid-user
+</Files>
